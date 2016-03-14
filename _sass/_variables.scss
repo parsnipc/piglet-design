@@ -1,11 +1,19 @@
 // Variables
 
 $brand-primary: #00AEEF;
-$text-color: #12132A;
 
 $font-family-sans-serif:  "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-serif:       "Lora", Georgia, "Times New Roman", Times, serif !default;
 
-$font-size-base:          16px !default;
+$font-size-base: 15px !default;
 
 $headings-font-weight: 700;
+$body-bg: #fcfcfc;
+
+$navbar-default-color: #fff !default;
+$navbar-default-bg:	$brand-primary;
+$navbar-border-radius: none;
+
+$border-radius-xlarge: 30px;
+
+$link-hover-decoration: none;
