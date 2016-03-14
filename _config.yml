@@ -11,7 +11,7 @@ email: parsnipc@yahoo.com.au
 description: > # this means to ignore newlines until "baseurl:"
   Emily Cutler - UX / UI Designer
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://parsnipc.github.io/portfolio/" # the base hostname & protocol for your site
+url: "http://parsnipc.github.io/portfolio" # the base hostname & protocol for your site
 twitter_username: parsnipc
 github_username:  parsnipc
 
