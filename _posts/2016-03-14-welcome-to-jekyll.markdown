@@ -1,25 +1,16 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2016-03-14 14:48:09 +1100
-categories: jekyll update
+title:  "Headland Park Fitness Rebrand"
+categories: web branding
+thumbnail: /assets/thumbnail-test.jpg
+excerpt: Headland Park Fitness were rebranding from Over Forty Fitness. They  wanted to attract a wider age range while retaining the relaxed and welcoming atmosphere the gym was known for.
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+<h2>The Brief</h2>
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+<p>Headland Park Fitness is a Mosman gym and they were rebranding from Over Forty Fitness. They  wanted to attract a wider age range while retaining the relaxed and welcoming atmosphere the gym was known for.</p>
 
-Jekyll also offers powerful support for code snippets:
+<p>A key feature of the gym is its fabulous location in Headland Park, a Harbour Trust managed business park and artist precinct near Sydney Harbour’s Middle Head. The site is green and leafy with ocean views.</p>
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+<h2>My role</h2>
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+<p>I designed a new brand identity including logo, marketing collateral and stationery as well a design and build of a custom wordpress website.</p>

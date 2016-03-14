@@ -2,3 +2,13 @@
 layout: default
 ---
 
+{% for post in site.posts %}
+  <div class="card">
+
+    <img class="card-thumb" src="{{ post.thumbnail }}" />
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.excerpt }}</p>
+    <a href="{{ post.url }}"><span class="glyphicon glyphicon-chevron-right"></span> More</a>
+
+  </div>
+{% endfor %}
