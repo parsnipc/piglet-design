@@ -1,5 +1,13 @@
 // Components
 
 .card {
-	
+	width: 33%;
+	padding: 20px;
+	display: block;
+	float: left;
+	background: lighten($brand-primary, 50%);
+
+	.card-thumb {
+		max-width: 100%;
+	}
 }
