@@ -3,3 +3,54 @@
 
 // import bootstrap
 @import "bootstrap";
+
+// Helpers
+
+/* Adds space between containers */
+.margin-b {
+	margin-bottom: 20px;
+}
+
+// Typography
+h1,.h1 {
+	font-weight: 800;
+}
+
+.lead {
+	font-weight: 400;
+}
+
+p {
+	font-weight: 100;
+	font-size: 1.2em;
+}
+
+// Home page 
+
+.header-home {
+	background-color: $brand-primary;
+	padding: 50px 0;
+
+	p {
+		color: white;
+		font-size: 1.5em;
+	}
+
+}
+
+.logo {
+	display: block;
+	margin: 0 auto;
+	background: url('../assets/logo.png') 0 0 no-repeat;
+	width: 541px;
+	height: 181px;
+}
+
+// Portfolio pages
+
+.post-hero-image {
+	margin-bottom: 10px;
+	img {
+		width: 100%;
+	}
+}

@@ -72,3 +72,13 @@
 		color: #666;
 	}
 }
+
+// Round container
+.round-container {
+	display: inline-block;
+	border-radius: 150px;
+	overflow: hidden;
+	img {
+		max-width: 100%;
+	}
+}
