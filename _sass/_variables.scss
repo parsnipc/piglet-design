@@ -1,26 +1,35 @@
 // Variables
 
 $brand-primary: #00BCD4;
+$brand-secondary: #607D8B;
+$brand-highlight: #FFF9C4;
 
-$font-family-sans-serif:  "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-family-serif:       "Lora", Georgia, "Times New Roman", Times, serif !default;
-$text-color: #072531;
+$font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+$text-color: #607D8B;
 
 $font-size-base: 15px !default;
 
-$headings-font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$headings-font-weight: 500;
-$headings-color: $brand-primary;
+$headings-font-family: $font-family-sans-serif;
+$headings-font-weight: 100;
+$headings-color: $brand-secondary;
 
-$body-bg: #fcfcfc;
+$body-bg: #fff;
 
 $navbar-default-color: #fff !default;
-$navbar-default-bg:	darken($brand-primary, 10%);
+$navbar-default-bg:	darken($brand-primary, 5%);
 $navbar-border-radius: none;
 $navbar-default-border: none;
 $navbar-margin-bottom: 0;
 $navbar-height: 100px;
 
-$border-radius-xlarge: 30px;
+// Navbar links
+$navbar-default-link-color:                #fff;
+$navbar-default-link-hover-color:          $brand-highlight;
+$navbar-default-link-active-color:         $brand-highlight;
+$navbar-default-link-disabled-color:       lighten($brand-primary, 40%);
+
+
+$border-radius-xlarge: 10px;
 
 $link-hover-decoration: none;

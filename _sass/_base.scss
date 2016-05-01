@@ -4,6 +4,11 @@
 // import bootstrap
 @import "bootstrap";
 
+
+figure {
+	padding-bottom: 30px;
+}
+
 // Helpers
 
 /* Adds space between containers */
@@ -12,23 +17,25 @@
 }
 
 // Typography
-h1,.h1 {
-	font-weight: 800;
-}
+
+h1 {
+	color: $brand-primary;
+	padding-bottom: 10px;
+	border-bottom: 1px solid lighten($brand-secondary, 30%);
+	}
 
 .lead {
 	font-weight: 400;
 }
 
 p {
-	font-weight: 100;
-	font-size: 1.2em;
+	font-weight: 300;
 }
 
 // Home page 
 
 .header-home {
-	background-color: $brand-primary;
+	background: $brand-primary url('../assets/pattern-octagonal.png') top right no-repeat;
 	padding: 50px 0;
 
 	p {
@@ -38,19 +45,44 @@ p {
 
 }
 
+.portfolio {
+	background-color: lighten($brand-secondary, 50%);
+
+}
+
 .logo {
 	display: block;
 	margin: 0 auto;
 	background: url('../assets/logo.png') 0 0 no-repeat;
+	background-size: 100% auto;
 	width: 541px;
 	height: 181px;
+	max-width: 100%;
 }
 
 // Portfolio pages
 
-.post-hero-image {
-	margin-bottom: 10px;
-	img {
-		width: 100%;
+.portfolio-page {
+
+	h2 {
+		font-size: 1.4em;
+		font-weight: 600;
+		margin-top: 0;
+		color: $brand-primary;
+
 	}
+
+	h3 {
+		font-weight: 600;
+		font-size: 1.2em;
+	}
+
+	.project-notes {
+		
+		h3:first-of-type {
+			margin-top: 0;
+		}
+
+	}
+
 }
