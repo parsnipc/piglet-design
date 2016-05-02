@@ -6,7 +6,7 @@
 
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: stretch;
 	align-content: stretch;
 	margin-top: 30px;
@@ -14,17 +14,18 @@
 }
 .card {
 	width: 30%;
-	margin-bottom: 30px;
+	margin: 0 15px 30px 15px;
 	background-color: #fff;
 	border-radius: $border-radius-xlarge;
 	transition: all 0.3s;
 	box-shadow: 0 0 3px lighten($brand-secondary, 40%);
-
+	
 	@media (max-width: $screen-md) {
 		width: 45%;
 	}
 	@media (max-width: $screen-sm) {
 		width: 100%;
+		margin-right: 0;
 	}
 
 	&:hover, &:focus {
@@ -59,11 +60,11 @@
 	.card-description {
 		position: relative;
 		display: block;
-		padding: 35px 20px  20px;
+		padding: 25px 20px 10px;
 
 		h3 {
 		    position: absolute;
-		    top: -22px;
+		    top: -52px;
 		    left: 20px;
 			margin-top: 0;
 		    padding: 10px;
@@ -80,10 +81,17 @@
 				border-radius: 3px;
 				width: 100%;
 				background: $brand-secondary;
-				height: 40px;
+				height: 60px;
 				z-index: -1;
 				opacity: 0.8;
 				transition: all 0.3s;
+
+			}
+			.category {
+				display: block;
+				font-weight: 100;
+				font-size: 0.7em;
+				padding-top: 3px;
 			}
 
 		}
@@ -140,4 +148,99 @@ figure {
 	img {
 		max-width: 100%;
 	}
+}
+
+//Browser frame
+
+.browser-frame {
+  border-radius: $frame-border-radius-large;
+  box-shadow: 0 0 3px $browser-chrome;
+  overflow: hidden;
+  margin-bottom: 30px;
+  
+	img {
+	  max-width: 100%;
+	}
+  
+
+	.browser-controls {
+	  height: 50px;
+	  display: flex;
+	  align-items: center;
+	  justify-content: space-around;
+	  background: $browser-chrome;
+	  color: $browser-controls;
+	}
+
+	.window-controls {
+	  flex: 0 0 60px;
+	  margin: 0 2%;
+	  span {
+	    display: inline-block;
+	    width: 15px;
+	    height: 15px;
+	    border-radius: 50px;
+	    background: $close;
+	    &.bf-minimise {
+	      background: $minimise;
+	    }
+	    &.bf-maximise {
+	      background: $maximise;
+	    }
+	  }
+	}
+
+	.page-controls {
+	  flex: 0 0 70px;
+	  margin-right: 2%;
+	  span {
+	    display: inline-block;
+	    width: 30px;
+	    text-align: center;
+	    padding-top: 3px;
+	    &.back:after {
+	      content: " \f053";
+	      font-family: fontawesome;
+	    }
+	    &.next:after {
+	      content: " \f054";
+	      font-family: fontawesome;
+	    }
+	  }
+	}
+
+	.url-bar {
+	  flex-grow: 1;
+	  margin-right: 2%;
+	  padding: 3px 5px 0 10px;
+	  font-family: monospace;
+	  color: darken($browser-controls, 20%);
+	  overflow: hidden;
+	   &:after {
+	     content: " \f0e2";
+	     font-family: fontawesome;
+	     font-size: 1.1em;
+	     display: block;
+	     float: right;
+	     color: $browser-controls;
+	  }
+	}
+
+	.full-screen {
+	  	flex: 0 0 30px;
+	  	margin-right: 2%;
+	  	text-align: center;
+	 	padding-top: 5px;
+	  &:after {
+	     content: " \f065";
+	     font-family: fontawesome;
+	  }
+	}
+
+	.white-container {
+	    height: $control-height;
+	    border-radius: $frame-border-radius-small;  
+	    background: white;
+	}
+
 }

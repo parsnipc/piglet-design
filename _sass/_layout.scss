@@ -1,3 +1,12 @@
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body  {
+	margin-bottom: 100px; 	/* Match footer height */
+}
+
 .navbar-brand {
 	padding-top: 15px;
 }
@@ -20,4 +29,10 @@ header {
 footer {
 	background-color: $brand-secondary;
 	padding: 30px 0;
+
+	/* Make footer sticky */
+	position: absolute;
+	bottom: 0;
+	height: 100px;
+	width: 100%;
 }
