@@ -11,15 +11,36 @@ body  {
 	padding-top: 15px;
 }
 
-.icons.navbar-nav > li > a {
-	padding-top: 30px;
-	padding-bottom: 30px;
-	padding-left: 10px;
-	padding-right: 10px;
-
-	.fa-inverse {
-		color: $brand-primary;
+ul.navbar-nav {
+	@media (max-width: $screen-sm-max) {
+		margin-top: 0;
+		margin-bottom: 0;	  
 	}
+}
+
+.icons.navbar-nav {
+	@media (max-width: $screen-sm-max) {
+		margin-bottom: 20px;	  
+	}
+	> li > a {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		padding-left: 10px;
+		padding-right: 10px;
+		
+		@media (max-width: $screen-sm-max) {
+			padding-top: 0;
+			padding-bottom: 0;	  
+		}
+
+		.fa-inverse {
+			color: $brand-primary;
+		}
+	}
+}
+
+.navbar .description {
+	color: #fff;
 }
 
 header {
@@ -29,10 +50,18 @@ header {
 footer {
 	background-color: $brand-secondary;
 	padding: 30px 0;
-
+	color: #fff;
+	
 	/* Make footer sticky */
 	position: absolute;
 	bottom: 0;
 	height: 100px;
 	width: 100%;
+
+	a {
+		color: $brand-highlight;
+		&:hover, &:focus {
+			color: lighten($brand-highlight, 5%);
+		}
+	}
 }

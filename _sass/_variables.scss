@@ -29,6 +29,11 @@ $navbar-default-link-hover-color:          $brand-highlight;
 $navbar-default-link-active-color:         $brand-highlight;
 $navbar-default-link-disabled-color:       lighten($brand-primary, 40%);
 
+// Navbar toggle
+$navbar-default-toggle-hover-bg:           darken($brand-primary,20%);
+$navbar-default-toggle-icon-bar-bg:        lighten($brand-primary, 5%);
+$navbar-default-toggle-border-color:       lighten($brand-primary, 5%);
+
 
 $border-radius-xlarge: 10px;
 
