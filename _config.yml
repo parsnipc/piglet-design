@@ -9,7 +9,7 @@
 title: Emily Cutler Designer
 email: hello@emilycutler.com
 description: > # this means to ignore newlines until "baseurl:"
-  Emily Cutler - UI/UX Designer and Front End Developer
+  Emily Cutler - UI/UX Designer
 baseurl: "/portfolio" # the subpath of your site, e.g. /blog
 url: "http://parsnipc.github.io" # the base hostname & protocol for your site
 twitter_username: parsnipc
