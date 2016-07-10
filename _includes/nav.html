@@ -12,23 +12,16 @@
     </div>
 
     <div class="collapse navbar-collapse" id="main-nav-toggle">
-      <ul class="nav navbar-nav">
-        
-        <li {% if p.url == page.url %}class="active"{% endif %}>
-          <a href="{{ site.github.url }}/">Home</a>
-        </li>
 
-        {% assign pages = site.pages | sort:"weight"  %}  
-        
-        {% for p in pages %}
+        {% assign pages = site.html_pages | sort:"weight"  %}  
 
-          {% if p.navinclude == "include" %}
+        <ul class="nav navbar-nav">
+        
+          {% for p in pages %}
           
-            <li {% if p.url == page.url %}class="active"{% endif %} >
-              <a href="{{ p.url }}">{{ p.title }}</a>
+            <li>
+              <a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">{{ p.title }}</a>
             </li>
-            
-          {% endif %}
 
         {% endfor %}
 
@@ -40,7 +33,7 @@
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
               </span>
-              LinkedIn
+              <span class="sr-only">LinkedIn</span>
             </a>
         </li>
         <li>
@@ -49,7 +42,7 @@
               <i class="fa fa-circle fa-stack-2x"></i>
               <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
             </span>
-            {{ site.email }}
+            <span class="sr-only">{{ site.email }}</span>
           </a>
         </li>
 
