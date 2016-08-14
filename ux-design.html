@@ -2,5 +2,28 @@
 layout: page
 title:  "UX Design"
 permalink: /ux-design
-weight: 3
+weight: 4
 ---
+<div class="card-container">
+
+	{% for post in site.categories.uxDesign %}
+
+  	<a class="card" href="{{ post.url }}">
+    
+	    <span class="card-thumb">
+	      <img src="{{ github.url }}{{ post.thumbnail }}" alt="{{ post.title }}" />
+	    </span>
+	        
+	    <span class="card-description">
+	      <h3>{{ post.title }}</h3>
+	      <p>{{ post.excerpt }}</p>
+	    </span>
+
+	      <span class="card-hover-icon">
+                <i class="fa fa-eye icon"></i>
+              </span>
+		</a>
+
+	{% endfor %}
+
+</div>

@@ -1,6 +1,32 @@
 ---
 layout: page
 title:  "Visual Design"
+categoryDescription: "Brand Identity, Marketing Collateral, Illustration"
 permalink: /visual-design
 weight: 2
 ---
+
+<div class="card-container">
+
+	{% for post in site.categories.visualDesign %}
+
+  	<a class="card" href="{{ post.url }}">
+    
+	    <span class="card-thumb">
+	      <img src="{{ github.url }}{{ post.thumbnail }}" alt="{{ post.title }}" />
+	    </span>
+	        
+	    <span class="card-description">
+	      <h3>{{ post.title }}</h3>
+	      <p>{{ post.excerpt }}</p>
+	    </span>
+
+  <span class="card-hover-icon">
+                <i class="fa fa-eye icon"></i>
+              </span>
+              
+		</a>
+
+	{% endfor %}
+
+</div>

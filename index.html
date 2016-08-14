@@ -3,7 +3,7 @@ layout: home
 title: Home
 weight: 1
 ---
-<header class="header-home">
+<header class="header home">
   <div class="container">
     <div class="row">
     <div class="col-md-8 col-md-offset-2">
@@ -31,79 +31,29 @@ weight: 1
 
         <div class="card-container">
 
-          <a class="card" href="2016/03/18/ui-design.html">
+          {% for post in site.posts %}
+
+            <a class="card" href="{{ post.url }}">
             
-            <span class="card-thumb">
-              <img src="assets/thumb-disco.png" alt="UI Design" />
-            </span>
-                
-            <span class="card-description">
-              <h3>Mathseeds for Schools <span class="category">UI Design + Development</span></h3>
-              <p>An admin dashboard for US Schools District coordinators.</p>
-              <p class="link">Show me <i class="fa fa-angle-right"></i></p>
-            </span>
+              <span class="card-thumb">
+                <img src="{{ github.url }}{{ post.thumbnail }}" alt="{{ post.title }}" />
+              </span>
+                  
+              <span class="card-description">
+                <h3>{{ post.title }}</h3>
+                <p>{{ post.excerpt }}</p>
+              </span>
 
-          </a>
+              <span class="card-hover-icon">
+                <i class="fa fa-eye icon"></i>
+              </span>
 
-          <a class="card" href="2016/03/18/ms-schools.html">
-            
-            <span class="card-thumb">
-              <img src="assets/thumb-ms-schools.png" alt="Brand and Web Design" />
-            </span>
-                
-            <span class="card-description">
-              <h3>Mathseeds Marketing Site <span class="category">Brand + Web Design</span></h3>
-              <p>An aquisition website for US primary school teachers.</p>
-              <p class="link">Show me <i class="fa fa-angle-right"></i></p>
-            </span>
+            </a>
 
-          </a>
-
-          <a class="card" href="2016/03/18/diversity-management.html">
-            
-            <span class="card-thumb">
-              <img src="assets/thumb-div-mgt.png" alt="Brand and Web Design" />
-            </span>
-                
-            <span class="card-description">
-              <h3>Diversity Mgt HR <span class="category">Brand + Web Design</span></h3>  
-              <p>Diversity Management needed to refresh their look and feel and to accommodate a suite of new online product offerings.</p>
-              <p class="link">Show me <i class="fa fa-angle-right"></i></p>
-            </span>
-
-          </a>
-
-
-          <a class="card" href="2016/03/18/cosies.html">
-            
-            <span class="card-thumb">
-              <img src="assets/thumb-cosies-book.png" alt="Brand and Print Design" />
-            </span>
-                
-            <span class="card-description">
-              <h3>Bondi CoSiES <span class="category">Brand + Print Design</span></h3>
-              <p>Logo and marketing collateral for a new Dept. of Education program.</p>
-              <p class="link">Show me <i class="fa fa-angle-right"></i></p>
-            </span>
-
-          </a>
-
-          <a class="card" href="2016/03/18/hpf.html">
-            
-            <span class="card-thumb">
-              <img src="assets/folio-hpf-thumb.png" alt="Brand and Web Design" />
-            </span>
-                
-            <span class="card-description">
-              <h3>Headland Park Fitness <span class="category">Brand + Web Design</span></h3>
-              <p>Headland Park Fitness, a gym in need of a rebrand!</p>
-              <p class="link">Show me <i class="fa fa-angle-right"></i></p>
-            </span>
-
-          </a>
-
+          {% endfor %}
 
         </div>
+
       </div>
     </div>
   </div>

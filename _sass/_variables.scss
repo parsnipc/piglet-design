@@ -1,8 +1,13 @@
 // Variables
 
-$brand-primary: #00BCD4;
+//Colours
+
+// $brand-primary: #00BCD4;
+$brand-primary: #607D8B;
 $brand-secondary: #607D8B;
-$brand-highlight: #FFF9C4;
+$brand-highlight: #00BCD4;
+$grey-light: #f1f1f1;
+
 
 $font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
@@ -25,9 +30,9 @@ $navbar-height: 100px;
 
 // Navbar links
 $navbar-default-link-color:                #fff;
-$navbar-default-link-hover-color:          $brand-highlight;
-$navbar-default-link-active-color:         $brand-highlight;
-$navbar-default-link-disabled-color:       lighten($brand-primary, 40%);
+$navbar-default-link-hover-color:          $brand-secondary;
+$navbar-default-link-active-color:         $brand-secondary;
+$navbar-default-link-disabled-color:       lighten($brand-secondary, 40%);
 
 // Navbar toggle
 $navbar-default-toggle-hover-bg:           darken($brand-primary,20%);
