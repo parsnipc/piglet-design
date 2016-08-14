@@ -30,8 +30,8 @@ $navbar-height: 100px;
 
 // Navbar links
 $navbar-default-link-color:                #fff;
-$navbar-default-link-hover-color:          $brand-secondary;
-$navbar-default-link-active-color:         $brand-secondary;
+$navbar-default-link-hover-color:          $brand-highlight;
+$navbar-default-link-active-color:         $brand-highlight;
 $navbar-default-link-disabled-color:       lighten($brand-secondary, 40%);
 
 // Navbar toggle
