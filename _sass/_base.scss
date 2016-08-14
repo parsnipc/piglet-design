@@ -8,6 +8,10 @@
 
 // Helpers
 
+html {
+	background-color: lighten($brand-primary, 50%);
+}
+
 /* Adds space between containers */
 .margin-b {
 	margin-bottom: 20px;
